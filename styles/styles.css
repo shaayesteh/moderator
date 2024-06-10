@@ -1,0 +1,61 @@
+:root {
+  --base-spacing: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-2 {
+  gap: calc(var(--base-spacing) * 2);
+}
+
+.w-10 {
+  width: 10rem;
+}
+
+.bg-grey {
+  background-color: gray;
+}
+
+.full-screen {
+  height: 100vh;
+}
+
+.p-2 {
+  padding: calc(var(--base-spacing) * 2);
+}
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.text-white {
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}

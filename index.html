@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./styles/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/styles.css"
+    />
+  </head>
+  <body>
+    <div class="flex flex-row">
+      <aside class="w-10 bg-grey full-screen p-2 flex flex-col gap-2">
+        <h3 class="text-lg text-white">Buynow</h3>
+        <nav>
+          <ul class="flex flex-col gap-2">
+            <li
+              id="og"
+              class="pointer"
+            >
+              organizations
+            </li>
+            <li
+              id="users"
+              class="pointer"
+            >
+              users
+            </li>
+            <li>roles</li>
+          </ul>
+        </nav>
+      </aside>
+      <main
+        id="main"
+        class="p-2"
+      ></main>
+    </div>
+
+    <!-- Templates -->
+    <template id="organizations-template">
+      <table border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Created at</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </template>
+
+    <template id="users-template">
+      <table border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Organization</th>
+            <th>Created at</th>
+            <th>Is active</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </template>
+
+    <script
+      type="module"
+      src="./components/getOrganizations.js"
+    ></script>
+    <script
+      type="module"
+      src="./components/getUsers.js"
+    ></script>
+  </body>
+</html>
